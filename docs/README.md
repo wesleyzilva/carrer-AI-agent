@@ -6,10 +6,12 @@ Fonte de verdade: `../CLAUDE.md`. Este índice organiza os documentos e aponta o
 
 | Documento | Conteúdo | Diagrama FigJam |
 |---|---|---|
+| `../README.md` | Setup, comandos da CLI, garantias | n/a |
 | `../CLAUDE.md` | Perfil, prioridades, pesos, regras de score, política de IA, segurança LinkedIn | n/a |
 | `ARCHITECTURE.md` | Monorepo, pipeline, modelo de dados, score, camada de IA | Pipeline, Modelo de dados |
 | `ROADMAP.md` | Fases 0 a 7 | Roadmap (gantt) |
 | `AUTO_APPLY.md` | Modos DRY_RUN/ASSISTED/AUTO, resolução de campos, adaptadores | Fluxo de candidatura |
+| `BROWSER.md` | Login, cadastro, sincronização de perfil, timeline de bloqueios, validação de seletores | n/a |
 
 ## Ordem de leitura
 

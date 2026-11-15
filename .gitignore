@@ -1,0 +1,12 @@
+node_modules/
+dist/
+*.tsbuildinfo
+.env
+data/*.db
+data/*.db-journal
+data/*.db-wal
+data/*.db-shm
+data/lancedb/
+data/browser-profile/
+data/screenshots/
+.DS_Store

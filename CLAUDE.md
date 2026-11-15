@@ -2,7 +2,13 @@
 
 Plataforma local-first para descobrir, avaliar e automatizar candidaturas alinhadas ao perfil de Wesley Gomes da Silva. Prioridades: baixo consumo de tokens, processamento local, manutenibilidade.
 
-> Fonte de verdade = este arquivo (mescla dos dois briefs; em conflito, vale o brief 2). Detalhes em `docs/ARCHITECTURE.md` e `docs/ROADMAP.md`.
+> Fonte de verdade = este arquivo (mescla dos dois briefs; em conflito, vale o brief 2). Detalhes em `docs/ARCHITECTURE.md` e `docs/ROADMAP.md`. Setup e comandos em `README.md`.
+
+## Estado atual
+
+Fases 0–2.5 prontas: monorepo pnpm, `@career/config`, `@career/core` (determinístico, testado), `@career/db` (SQLite+Drizzle), `@career/llm` (Ollama + guard), CLI `pnpm career`. `@career/browser` pronto: sessão persistente, login/signup/profile-sync nos 4 sites, timeline de bloqueios (`docs/BROWSER.md`). Pendente: discovery de vagas, LanceDB, dashboard, auto-apply.
+
+Convenções de código: funções puras no core; pesos só em `config/scoring.ts`; todo texto de IA passa por `guardGeneratedText`; nunca gravar dados pessoais (telefone, e-mail) no repositório, só em `.env` (`PROFILE_*`); testes Vitest ao lado do código (`*.test.ts`); `pnpm typecheck && pnpm test` antes de encerrar.
 
 ## Perfil
 
@@ -97,6 +103,13 @@ Detalhes em `docs/AUTO_APPLY.md`; fontes em `packages/config/src/sources.ts`. To
 - Campos: perfil → banco de respostas → opções → Ollama (texto livre) → humano. IA nunca decide salário, score, duplicidade, idioma ou senioridade.
 - Respostas geradas por IA entram como `needs_review`; números e ferramentas citados são conferidos contra o perfil.
 - Limites padrão: 10 candidaturas/dia no total, uma por vez, intervalos aleatórios.
+
+## Navegador e timeline
+
+- Credenciais só no `.env` (`CRED_<SITE>_EMAIL/PASSWORD`); sessão persistente por site em `data/browser-profile/`.
+- Timeline não é log de tudo: `runs` (outcome OK/BLOCKED/WAITING_HUMAN/FAILED) + `run_events` só com marcos, bloqueios e erros; screenshot em bloqueio/erro.
+- `signup` nunca é AUTO; `profile-sync` em DRY_RUN só mostra diff. Modo efetivo limitado por `sources.ts`.
+- Seletor ausente → `BLOCKED(selector_missing)`, nunca adivinhar.
 
 ## Segurança LinkedIn
 

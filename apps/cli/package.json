@@ -1,0 +1,22 @@
+{
+  "name": "@career/cli",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "career": "./src/main.ts"
+  },
+  "scripts": {
+    "build": "tsc -b",
+    "start": "tsx src/main.ts"
+  },
+  "dependencies": {
+    "@career/browser": "workspace:*",
+    "@career/config": "workspace:*",
+    "@career/core": "workspace:*",
+    "@career/db": "workspace:*",
+    "@career/llm": "workspace:*",
+    "@career/logger": "workspace:*",
+    "commander": "^14.0.0"
+  }
+}

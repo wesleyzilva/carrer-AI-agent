@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Technical Program Manager, Cloud Migration (Remote)",
+    "company": "Datadog",
+    "url": "https://careers.datadoghq.com/detail/5551234/?gh_src=linkedin",
+    "location": "Remote - Americas",
+    "salaryText": "$150,000 - $180,000 USD per year",
+    "description": "Lead cloud migration and data migration programs across engineering. Experience with Datadog, OpenTelemetry, AWS, Agile and SAFe. Strong stakeholder management with distributed teams.",
+    "source": "linkedin"
+  },
+  {
+    "title": "Technical Program Manager, Cloud Migration (Remote)",
+    "company": "Datadog",
+    "url": "https://www.indeed.com/viewjob?jk=abc123",
+    "location": "Remote - Americas",
+    "description": "Same posting syndicated to Indeed.",
+    "source": "indeed"
+  },
+  {
+    "title": "Gerente de Tecnologia - Pagamentos",
+    "company": "Banco Exemplo S.A.",
+    "url": "https://portal.gupy.io/job/1001",
+    "location": "São Paulo, SP - Híbrido",
+    "salaryText": "R$ 25.000 a R$ 32.000",
+    "description": "Liderar squads de pagamentos (PIX, cartões), com foco em segurança (PCI-DSS), observabilidade (Datadog) e metodologias ágeis. Experiência com migração para nuvem AWS e gestão de stakeholders.",
+    "source": "gupy"
+  },
+  {
+    "title": "Senior Scrum Master",
+    "company": "Wise",
+    "url": "https://www.wise.jobs/role/9988",
+    "location": "Remote - Brazil",
+    "description": "Coach teams in Scrum and Kanban, facilitate PI Planning, remove impediments. Payments domain. English required.",
+    "source": "linkedin"
+  },
+  {
+    "title": "Data Platform Manager",
+    "company": "Nubank",
+    "url": "https://boards.greenhouse.io/nubank/jobs/777",
+    "location": "São Paulo (Remoto)",
+    "salaryText": "R$ 28.000/mês",
+    "description": "Gerenciar a plataforma de dados em Databricks e Spark, governança, analytics e observabilidade com Grafana. Liderança de time distribuído.",
+    "source": "greenhouse"
+  },
+  {
+    "title": "Desenvolvedor Java Júnior",
+    "company": "Loja XYZ Ltda",
+    "url": "https://www.vagas.com.br/vagas/v1",
+    "location": "Curitiba, PR - Presencial",
+    "description": "Vaga para desenvolvedor júnior em e-commerce. Conhecimento em Java e SQL.",
+    "source": "vagas"
+  },
+  {
+    "title": "Engineering Manager, Security Platform",
+    "company": "CrowdStrike",
+    "url": "https://crowdstrike.wd5.myworkdayjobs.com/crowdstrikecareers/job/R12345",
+    "location": "Remote, USA",
+    "salaryText": "$190k - $230k",
+    "description": "Lead engineers building cybersecurity platform services. DevSecOps, cloud infrastructure on AWS and GCP, observability. Manage distributed teams.",
+    "source": "glassdoor"
+  }
+]
